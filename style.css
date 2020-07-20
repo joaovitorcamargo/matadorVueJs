@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*Geral*/
+html {
+  font-family: "Anton", sans-serif;
+}
+
+#app {
+  display: grid;
+}
+
+.panel {
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+/*Scores*/
+.scores {
+  display: flex;
+}
+.score {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.score h1 {
+  font-weight: 700;
+}
+.life-bar {
+  width: 80%;
+  height: 20px;
+  border: 1px solid #aaaaaa;
+}
+.life-bar .life {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: green;
+}
+.life-bar .life.danger {
+  background-color: red;
+}
+/*Area do Resultado*/
+
+.result {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.result .win {
+  color: green;
+}
+.result .lose {
+  color: red;
+}
+/*Area dos botões*/
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  padding: 5px 10px;
+  margin: 0px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+.start {
+  background-color: #4253af;
+  color: white;
+}
+.attack {
+  background-color: #e51c23;
+  color: white;
+}
+.especial-attack {
+  background-color: #ff9800;
+  color: black;
+}
+.heal {
+  background-color: #259b24;
+  color: white;
+}
+.give-up {
+  background-color: #bbb;
+  color: black;
+}
+/*Area Logs*/
+
+.logs ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.logs ul li {
+  display: flex;
+  justify-content: center;
+  margin: 4px 0px;
+  padding: 3px 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+.player {
+  font-family: "Roboto", sans-serif;
+  background-color: #4253afaa;
+  color: white;
+}
+
+.monster {
+  font-family: "Roboto", sans-serif;
+  background-color: #e51c23aa;
+  color: white;
+}
